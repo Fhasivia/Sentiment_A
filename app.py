@@ -50,7 +50,7 @@ with st.expander('Analizar texto'):
 
         elif x >=-1 and x <= 0:
             st.write( 'Es un sentimiento Negativo 😔')
-            with open('Morty Cry') as source:
+            with open('Morty Cry Loader') as source:
                  animation = json.load(source)
             st_lottie(animation, width=350)
         else:
