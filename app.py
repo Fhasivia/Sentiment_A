@@ -12,6 +12,13 @@ with open('live_chatbot.json') as source:
 
 st_lottie(animation, width=350)
 
+def load_lottie_file(path: str):
+    with open(path, "r") as f:
+        return json.load(f)
+
+lottie_animation = load_lottie_file("live_chatbot..json")
+st_lottie(lottie_animation, height=200, loop=True, key="reactions")
+
 st.title('Análisis de Sentimiento')
 image = Image.open('emoticones.jpg')
 st.image(image)
