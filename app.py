@@ -7,7 +7,7 @@ from googletrans import Translator
 from streamlit_lottie import st_lottie
 import json
 
-with open('Live chatbot.json') as source:
+with open('live_chatbot.json') as source:
     animation = json.load(source)
 
 st_lottie(animation, width=350)
