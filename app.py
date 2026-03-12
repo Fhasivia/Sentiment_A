@@ -7,15 +7,13 @@ from googletrans import Translator
 from streamlit_lottie import st_lottie
 import json
 
-with open('Live chatbot.json') as source:
+with open('Welcome.json') as source:
     animation = json.load(source)
 
 st_lottie(animation, width=350)
 
 
-st.title('Análisis de Sentimiento')
-image = Image.open('emoticones.jpg')
-st.image(image)
+
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
 
 translator = Translator()
